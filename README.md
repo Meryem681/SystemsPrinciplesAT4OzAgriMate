@@ -1,31 +1,41 @@
 # SystemsPrinciplesAT4OzAgriMate
 Assignment 4 
-
-# SystemsPrinciplesAT4OzAgriMate
-Assignment 4 
 CHECK LIST and description
 
-8 repositories are to be made
-
+8 method + path combinations to be made 
 
 4 http (communication methods) must be used 
--> GET = gets farm records 
--> POST = publicises farm records 
--> PUT = puts something into farm records
--> DELETE = deletes farm record 
+
+GET
+“Show me!” 
+Retrieve existing farm records.
+Example: GET /farms — show all farms.
+
+
+POST
+“Add a new one!”
+Create a new farm record.
+Example: POST /farms — add a farm.
+
+
+PUT
+“Update this one!”
+Replace or update an existing farm record.
+Example: PUT /farms/101 — update Farm 101.
+
+DELETE
+“Remove this one!” 
+Delete an existing farm record.
+Example: DELETE /farms/101 — delete Farm 101.
 
 
 8 REST API endpoints must be made 
--> rest api endpoints make http requests from our ozagrimate application to our API using get, post, put, delete methods 
+-> rest api endpoints make http requests from our ozagrimate application to our API using ** get, post, put, delete** methods 
+-> think of rest application programming interface (api) as a doorway between programs that asks for something or performs an action (eg getting farm records) 
 
 A microservice architecture structure will be used (each repository has its own database and each service owns its own data)
 
-We are going to do an orchestration approach for our architecture structure, with a central coordinator instead of a sequenced, linear approach 
-
-1st repo: interface 
-2nd repo: farm management service 
-3d repo: iot monitoring service 
-4th repo: AI recommendation service 
-5th repo: notification server (alerts reminders messages)
-6th repo: weather forecasting 
-7th repo: iot sensors 
+1nd repo: farm management service (but be more specific what do we do here?) 
+2nd repo: iot monitoring service 
+3d repo: AI recommendation service 
+4th repo: notification server (alerts reminders messages)
